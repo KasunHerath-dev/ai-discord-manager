@@ -1,4 +1,4 @@
-# FasNet AI Discord Manager
+# AI Discord Manager
 
 **A zero-dependency local web application for safely managing a Discord server using natural-language prompts.**
 
