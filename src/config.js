@@ -1,0 +1,14 @@
+import path from "node:path";
+import { mkdirSync } from "node:fs";
+export const VERSION = "1.0.0";
+export const HOST = process.env.HOST || "127.0.0.1";
+export const PORT = Number(process.env.PORT || 8787);
+export const ROOT = process.cwd();
+export const PUBLIC_DIR = path.join(ROOT, "public");
+export const DATA_DIR = path.resolve(ROOT, process.env.DATA_DIR || ".local-data");
+export const SETTINGS_FILE = path.join(DATA_DIR, "settings.json");
+export const SECRETS_FILE = path.join(DATA_DIR, "secrets.enc.json");
+export const PLANS_FILE = path.join(DATA_DIR, "plans.json");
+export const AUDIT_FILE = path.join(DATA_DIR, "audit.json");
+export const BACKUPS_DIR = path.join(DATA_DIR, "backups");
+for (const dir of [DATA_DIR, BACKUPS_DIR]) mkdirSync(dir, { recursive: true });

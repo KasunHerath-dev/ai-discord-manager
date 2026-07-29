@@ -1,0 +1,52 @@
+# Runtime data
+.local-data/
+.env
+.env.local
+.env.*.local
+*.log
+logs/
+
+# Dependencies
+node_modules/
+package-lock.json
+yarn.lock
+
+# Build and distribution
+dist/
+build/
+*.tsbuildinfo
+
+# Test coverage
+coverage/
+.nyc_output/
+
+# OS and editor files
+.DS_Store
+.AppleDouble
+.LSOverride
+Thumbs.db
+.vscode/settings.json
+.vscode/launch.json
+.idea/
+*.swp
+*.swo
+*~
+.sublime-project
+.sublime-workspace
+
+# Archives
+*.zip
+*.tar
+*.tar.gz
+*.tgz
+
+# Temporary files
+*.tmp
+.cache/
+tmp/
+
+# IDE
+.vscode/
+.idea/
+*.code-workspace
+

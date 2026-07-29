@@ -1,0 +1,3 @@
+import test from "node:test";import assert from "node:assert/strict";import{classifyAction,securePlan}from"../src/planner/safety.js";
+test("administrator blocked",()=>assert.match(classifyAction({type:"CREATE_ROLE",permissions:["Administrator"]},"full").blocked,/Administrator/));
+test("delete needs confirmation",()=>{const p=securePlan({id:"p",prompt:"x",summary:"x",assumptions:[],warnings:[],questions:[],actions:[{id:"a",type:"DELETE_CHANNEL",reason:"old",name:"old",risk:"low"}],risk:"low",status:"pending",createdAt:"x",updatedAt:"x",executionLog:[]},"managed");assert.equal(p.confirmationPhrase,"APPLY 1 HIGH RISK ACTIONS")});

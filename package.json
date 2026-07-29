@@ -1,0 +1,22 @@
+{
+  "name": "fasnet-ai-discord-manager",
+  "version": "1.0.0",
+  "type": "module",
+  "description": "A zero-dependency local Gemini-powered web console for safely managing a Discord server.",
+  "author": "YOUR_NAME",
+  "license": "MIT",
+  "homepage": "https://github.com/YOUR_USERNAME/fasnet-ai-discord-manager",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/YOUR_USERNAME/fasnet-ai-discord-manager.git"
+  },
+  "scripts": {
+    "start": "node src/index.js",
+    "dev": "node --watch src/index.js",
+    "test": "node --test",
+    "check": "node scripts/check.mjs"
+  },
+  "engines": {
+    "node": ">=22.0.0"
+  }
+}
